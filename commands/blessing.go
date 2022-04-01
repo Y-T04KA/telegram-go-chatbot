@@ -62,6 +62,7 @@ func Blessing(context tele.Context) error {
 		"разогнал RTX 4090 Ti",
 		"принял ислам",
 		"пьёт чай и кушоет конфеты, никакова суецыда",
+		"отрицательно воскрес"
 	}
 	return context.Send(fmt.Sprintf("<code>💥 %v %v%v.\nРеспавн через %v мин.</code>", utils.UserFullName(context.Sender()), prependText, reason[rand.Intn(len(reason))], duration))
 }
